@@ -1,0 +1,272 @@
+/* Commentaires en csss */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'police3';
+    src: url('police/police3.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'police3bold';
+    src: url('police/police3bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'police2';
+    src: url('police/police2.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'police2bold';
+    src: url('police/police2bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'flowers';
+    src: url('police/flowers.ttf');
+    font-style: normal;
+}
+
+body {
+    
+    background-image: url(Fond_Ecran.jpg);
+    background-size: cover;
+    background-attachment: scroll; /* image de fond défile avec le texte*/
+    background-repeat: no-repeat; /* Repetition de l'image de fond*/
+    background-position: top left; /*position de l'image de fond */
+}
+
+
+
+
+
+
+img {
+
+    border-radius: 5px; /* On arrondi les rebords */
+}
+
+header {
+    
+    margin-top:20px;
+    background-color:rgba(0,0,0,0.1);
+    width:100%;
+    height:5%; 
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    color: white;
+    font-size: 15px;
+    font-family: "flowers","Helvetica Neue";
+    padding: 4px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+h2{
+    font-family: "flowers","Helvetica Neue";
+    color:white;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 80px;
+    margin-left: 50px;
+    
+}
+
+#bloc1
+{
+    
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+a /* Boutons d'inscription et de connexion (non survolés) */
+{
+    font-size: medium; /*Taille*/
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: "police2","Helvetica Neue";
+    font-style: normal;
+    border-radius: 5px;
+    width: 100px; 
+    text-align: justify;
+    padding: 15px;
+    padding-left: 45px;
+    border-width: 50px;
+    font-weight: border;
+    background-color: rgba(255,255,255,0.2);
+    border: white;
+    
+}
+
+a:hover /* Apparence des boutons d'inscription et de connexion lorsqu'ils sont survolés */
+{
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: "police2bold","Helvetica Neue";
+    font-style: normal;
+    text-align: justify;
+}
+
+
+
+h4{
+    color:white;
+    font-family: "flowers","Helvetica Neue";
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+
+
+/* Formulaire de connexion */
+.formulaire2 input[name='nom'],input[name='mdp'], input[name='pseudo'], input[name='age'], input[type='telephone'] {
+    width:200px;
+    height:35px;
+    display: flex; 
+    flex-direction: column; 
+    text-align: center;
+    border: 0px;
+    margin-left: 100px;
+    border-radius:5px;
+    -webkit- border-radius: 15px;
+    -o- border-radius: 15px;
+    -moz- border-radius: 15px;
+    
+}
+
+
+.formulaire2 input[type='sexe'], input[type='securite']{
+   
+    margin-left: 160px;
+}
+
+.formulaire2 input[type='submit']{
+    
+    width:160px;
+    height: 50px;
+    border-radius:5px;
+    margin-left: 130px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: "police2", sans-serif;
+}
+
+.formulaire2 input[type='submit']:hover{
+    
+    width:160px;
+    height: 50px;
+    border-radius:5px;
+    margin-left: 130px;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    font-family: "police2bold", sans-serif;
+}
+
+.phrase p {
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    font-style: italic;
+    color:white;
+    padding-left: 20px;
+    
+}
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+
+label {
+    margin-left: 100px;
+    font-family: "Helvetica Neue";
+    text-align: center;
+    font-weight: normal;
+    
+}
+
+
+
+p
+{
+    font-size: medium; /*taille du texte, Openclassroom recommende en em (1.4 em pourrédiure inf à 1)*/
+    font-family: fantasy, "Arial Black", sans-serif; /*POlice du texte*/
+    font-style: normal; /*mettre en itlaqiue*/
+    font-weight: normal; /*mettre en gras*/
+    text-align: left; /*Alignement du texte*/
+    color: blue; /* couleur du texte*/
+}
+
+
+.formulaire_deco{
+    width: 300px;
+    height:100px;
+    background-color: rgba(223,223,223,0.2);
+    text-align: center;
+    margin: 0 1000px;
+    margin-top: 200px;
+    padding-top: 25px;
+    padding-left: 0px;
+    border-radius: 15px;
+    -webkit- border-radius: 15px;
+    -o- border-radius: 15px;
+    -moz- border-radius: 15px;
+    color:white;
+    font-weight: bolder; /*caractères gras*/
+    box-shadow: inset 4px 4px  rgba(0,0,0, 0.5);
+    
+}
+.formulaire3{
+    width: 300px;
+    height:100px;
+    background-color: rgba(223,223,223,0.2);
+    text-align: center;
+    margin: 0 1000px;
+    margin-top: 200px;
+    padding-top: 25px;
+    padding-left: 100px;
+    border-radius: 15px;
+    -webkit- border-radius: 15px;
+    -o- border-radius: 15px;
+    -moz- border-radius: 15px;
+    color:white;
+    font-weight: bolder; /*caractères gras*/
+    box-shadow: inset 4px 4px  rgba(0,0,0, 0.5);
+    
+}
+
+
+.erreurpseudo{
+    
+    font-family: "police3", sans-serif;
+    color:red;
+    margin-left: 120px;
+    
+}
+
+
+.deconnexion{
+
+    background-image: url(fond4.jpg);
+    background-size: 80%;
+    background-color: black;
+    background-attachment: scroll; /* image de fond défile avec le texte*/
+    background-repeat: no-repeat; /* Repetition de l'image de fond*/
+    background-position: top left; /*position de l'image de fond */
+}
