@@ -1,0 +1,143 @@
+/* Titre Connexion */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'police3';
+    src: url('police/police3.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'police3bold';
+    src: url('police/police3bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'police2';
+    src: url('police/police2.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'police2bold';
+    src: url('police/police2bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'flowers';
+    src: url('police/flowers.ttf');
+    font-style: normal;
+}
+
+h2{
+    color:white;
+    font-family: "flowers","Helvetica Neue";
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Design du body */
+body {
+    
+    background-color: #008080;
+    background-size: cover;
+    background-attachment: scroll; /* image de fond défile avec le texte*/
+    background-repeat: no-repeat; /* Repetition de l'image de fond*/
+    background-position: top left; /*position de l'image de fond */
+}
+
+header {
+    
+    margin-top:20px;
+	background-color:rgba(0,0,0,0.4);
+	width:100%;
+    height:5%; 
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+    color: white;
+    font-size: 15px;
+  	font-family: "flowers","Helvetica Neue";
+    padding: 4px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* affichage logo*/
+img {
+    border-radius: 5px; /* On arrondi les rebords */
+}
+
+ /* Design du bloc du formulaire de connexion */ 
+.formulaire{
+    width: 300px;
+    height:300px;
+    background-color: rgb(223,223,223,0.2);
+    text-align: center;
+    margin-left: 330px;
+    margin-top: 70px;
+    padding-top: 25px;
+    padding-left: 0px;
+    border-radius: 15px;
+    -webkit- border-radius: 15px;
+    -o- border-radius: 15px;
+    -moz- border-radius: 15px;
+    color:white;
+    font-weight: bolder; /*caractères gras*/
+    box-shadow: inset 4px 4px 4px 4px rgba(0,0,0, 0.5); 
+    
+}
+/* Design de chacun des champs */
+.formulaire input[name='mdp']{
+    width:200px;
+    height:35px;
+    padding-left: 5px;
+    margin-left: 10px;
+    border: 0px;
+    border-radius:5px;
+    -webkit- border-radius: 15px;
+    -o- border-radius: 15px;
+    -moz- border-radius: 15px;
+    
+}
+
+.formulaire input[name='pseudo']{
+    width:200px;
+    height:35px;
+    padding-left: 5px;
+    margin-left: 10px;
+    border: 0px;
+    border-radius:5px;
+    -webkit- border-radius: 15px;
+    -o- border-radius: 15px;
+    -moz- border-radius: 15px;
+    
+}
+
+
+
+.formulaire input[type='submit']{
+    width:120px;
+    height: 45px;
+    border:0px;
+    border-radius:5px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: "police2";
+    
+}
+
+.formulaire input[type='submit']:hover {
+    width:120px;
+    height: 45px;
+    border:0px;
+    border-radius:5px;
+    background-color: grey;
+    font-family: "police2bold";
+    color: white;
+}

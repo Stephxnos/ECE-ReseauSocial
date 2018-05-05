@@ -1,0 +1,33 @@
+      #header{
+           background-color: #424558;
+            color : white;
+            text-align: center;
+            padding: 10px;
+             }
+    
+        #nav{  
+            Line-height: 30 px;
+            background-color: whitesmoke;
+            height: 400 px;
+            width: 150 px;
+            float : left;
+            padding: 5px;
+             }
+        
+        #section{
+           background-color: whitesmoke;
+            width: auto; 
+            float: left;
+            padding: 10 px;
+            height: 400 px
+              }   
+
+         .left{
+            float: left;
+            width: 80%;
+              }
+
+         .right{ 
+          float: left;
+          width: 20%;
+            }
